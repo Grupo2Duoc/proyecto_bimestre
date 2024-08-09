@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css"> 	    
-        
-        <title>Tienda de Videojuegos</title> 
-    </head>
-    <div>       
-        <p id="titulo"> TIENDA DE VIDEOJUEGOS </p>
-        <left> <a href="index.html"> <img src="img/logo.jpg" width="200"></left></a> <!--insertamos logo y botón de Contacto-->    
-        <a href="mailto:contacto@gmail.com">
-            <input class="boton" type="button" value="Contacto" style="float: right;" ><!--coloco botón contacto a la derecha-->           
-        </a>
-    </div> 
-    <body id="fondo">     
-        <form class="buscador" action="/buscar" method="GET">
-            <input type="search" id="busqueda" name="q" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </form>     
-            <nav>
-                <a class="menu">CATEGORIAS</a>
-                <a href="#" class="navegador">Acción</a>
-                <a href="#" class="navegador">Familiar</a>
-                <a href="#" class="navegador">Deportes</a>
-                <a href="#" class="navegador">Horror</a>
-                <a href="#" class="navegador">RPG</a>
-            </nav>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoría: RPG</title>
     <link rel="stylesheet" href="style.css">
+    <title>Tienda de Videojuegos</title> 
 </head>
-<body>
+<body id="fondo">
+    <header>
+        <p id="titulo">TIENDA DE VIDEOJUEGOS</p>
+        <a href="index.html">
+            <img src="img/logo.jpg" width="200" alt="Logo">
+        </a> <!-- insertamos logo -->
+        <a href="mailto:contacto@gmail.com">
+            <input class="boton" type="button" value="Contacto" style="float: right;">
+        </a> <!-- coloco botón contacto a la derecha -->
+    </header>
+    
+    <nav>
+        <a class="menu">CATEGORIAS</a>
+        <a href="#" class="navegador">Acción</a>
+        <a href="#" class="navegador">Familiar</a>
+        <a href="#" class="navegador">Deportes</a>
+        <a href="#" class="navegador">Horror</a>
+        <a href="#" class="navegador">RPG</a>
+    </nav>
+    
+    <form class="buscador" action="/buscar" method="GET">
+        <input type="search" id="busqueda" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+    
     <div class="game-container">
         <div class="game">
-            <img src="baldurs-gate.jpg" alt="Baldur's Gate">
+            <img src="img/baldurs-gate.jpg" alt="Baldur's Gate">
             <div class="game-info">
                 <h2>Baldur's Gate</h2>
                 <p class="price">$59.990</p> <!-- Aquí se agrega el precio -->
@@ -51,7 +46,7 @@
         </div>
 
         <div class="game">
-            <img src="dragon-age.jpg" alt="Dragon Age: Origins">
+            <img src="img/dragon-age.jpg" alt="Dragon Age: Origins">
             <div class="game-info">
                 <h2>Dragon Age: Origins</h2>
                 <p class="price">$29.990</p> <!-- Aquí se agrega el precio -->
