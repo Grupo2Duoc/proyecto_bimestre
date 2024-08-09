@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 	    
     <title>Tienda de Videojuegos</title> 
 </head>
-<body id="fondo">
-    <header>
-        <p id="titulo">TIENDA DE VIDEOJUEGOS</p>
-        <a href="index.html">
-            <img src="img/logo.jpg" width="200" alt="Logo">
-        </a> <!-- insertamos logo -->
-        <a href="mailto:contacto@gmail.com">
-            <input class="boton" type="button" value="Contacto" style="float: right;">
-        </a> <!-- coloco botón contacto a la derecha -->
-    </header>
-    
-    <nav>
-        <a class="menu">CATEGORIAS</a>
-        <a href="#" class="navegador">Acción</a>
-        <a href="#" class="navegador">Familiar</a>
-        <a href="#" class="navegador">Deportes</a>
-        <a href="#" class="navegador">Horror</a>
-        <a href="#" class="navegador">RPG</a>
-    </nav>
-    
+
+<body id="fondo">     
+  <div class="contenedor">       
+    <left> <a href="index.html"> <img class="logo" src="img/logo.jpg"></left></a> <!--insertamos logo y botón de Contacto-->   
+    <div class="textos">
+      <p id="titulo"> TIENDA DE VIDEOJUEGOS </p>
+    </div>
+    <a href="mailto:contacto@gmail.com">
+        <input class="boton" type="button" value="Contacto" style="float: right;" ><!--coloco botón contacto a la derecha-->           
+    </a>
     <form class="buscador" action="/buscar" method="GET">
-        <input type="search" id="busqueda" name="q" placeholder="Buscar...">
-        <button type="submit">Buscar</button>
+      <input type="search" id="busqueda" name="q" placeholder="Buscar...">
+      <button type="submit">Buscar</button>
     </form>
-    
+  </div>      
+  <br>
+        <nav>
+            <a class="menu">CATEGORIAS</a>
+            <a href="#" class="navegador">Acción</a>
+            <a href="#" class="navegador">Familiar</a>
+            <a href="#" class="navegador">Deportes</a>
+            <a href="#" class="navegador">Horror</a>
+            <a href="#" class="navegador">RPG</a>
+        </nav>
+  <br>
+  <!--Desde aquí hacia arriba se mantiene la barra de categoría-->
+  
     <div class="game-container">
         <div class="game">
             <img src="img/marioparty.png" alt="Mario Party">

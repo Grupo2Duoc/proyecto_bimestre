@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"> 	    
-    
     <title>Tienda de Videojuegos</title> 
 </head>
-<div>       
-    <p id="titulo"> TIENDA DE VIDEOJUEGOS </p>
-    <left> <a href="index.html"> <img src="img/logo.jpg" width="200"></left></a> <!--insertamos logo y botón de Contacto-->    
+
+<body id="fondo">     
+  <div class="contenedor">       
+    <left> <a href="index.html"> <img class="logo" src="img/logo.jpg"></left></a> <!--insertamos logo y botón de Contacto-->   
+    <div class="textos">
+      <p id="titulo"> TIENDA DE VIDEOJUEGOS </p>
+    </div>
     <a href="mailto:contacto@gmail.com">
         <input class="boton" type="button" value="Contacto" style="float: right;" ><!--coloco botón contacto a la derecha-->           
     </a>
-</div> 
-<body id="fondo">     
     <form class="buscador" action="/buscar" method="GET">
-        <input type="search" id="busqueda" name="q" placeholder="Buscar...">
-        <button type="submit">Buscar</button>
-    </form>     
+      <input type="search" id="busqueda" name="q" placeholder="Buscar...">
+      <button type="submit">Buscar</button>
+    </form>
+  </div>      
+  <br>
         <nav>
             <a class="menu">CATEGORIAS</a>
             <a href="#" class="navegador">Acción</a>
@@ -26,51 +29,39 @@
             <a href="#" class="navegador">Horror</a>
             <a href="#" class="navegador">RPG</a>
         </nav>
+  <br>
   <!--Desde aquí hacia arriba se mantiene la barra de categoría-->
   
     <p id="subtitulo">NOVEDADES DEL MES</p>
     <div class="articles-area">
         <div class="article-area">
           <div class="image-article-area">
-             
                     <img src="img/juego1.jpeg" width="570px" height="450px">
-              
           </div>
           <div class="info-article">
             <div>
-           
-            
                 <p class="title-info-article">
                     CALL OF DUTY 
                 </p>
-             
               <p class="article">
                 ¡Descubre la adrenalina de Call of Duty por solo $49.990! 
                 Sumérgete en la acción con este legendario videojuego de disparos en primera persona. 
                 ¡Prepárate para batallas épicas, gráficos impresionantes y modos de juego que te mantendrán al borde de tu asiento!              
-            
+              </p>
                 <p id="precio">
                 <strong>$ 49.990</strong>
-                </p>
-             
-                                       
+                </p>                     
               </p>
-              
             </div>
-            
           </div>
         </div>
 
         <div class="article-area">
           <div class="image-article-area">
-            
                     <img src="img/juego2.jpeg" width="570px" height="450px">
-                
           </div>
           <div class="info-article">
             <div>
-            
-         
                 <p class="title-info-article">
                     FALL GUYS
                 </p>
@@ -81,7 +72,7 @@
                 Corre, salta y choca en desafíos alocados para ser el último en pie. 
                 ¡Es caos, diversión y risas garantizadas en cada partida!
               </p>
-            
+              <br>
                 <p id="precio">
                     <strong>$ 15.990</strong>
                 </p>
