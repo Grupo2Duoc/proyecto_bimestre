@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda de Videojuegos</title> 
+</head>
+<body id="fondo">
+    <header>
+        <p id="titulo">TIENDA DE VIDEOJUEGOS</p>
+        <a href="index.html">
+            <img src="img/logo.jpg" width="200" alt="Logo">
+        </a> <!-- insertamos logo -->
+        <a href="mailto:contacto@gmail.com">
+            <input class="boton" type="button" value="Contacto" style="float: right;">
+        </a> <!-- coloco botón contacto a la derecha -->
+    </header>
+    
+    <nav>
+        <a class="menu">CATEGORIAS</a>
+        <a href="#" class="navegador">Acción</a>
+        <a href="#" class="navegador">Familiar</a>
+        <a href="#" class="navegador">Deportes</a>
+        <a href="#" class="navegador">Horror</a>
+        <a href="#" class="navegador">RPG</a>
+    </nav>
+    
+    <form class="buscador" action="/buscar" method="GET">
+        <input type="search" id="busqueda" name="q" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+    
+    <div class="game-container">
+        <div class="game">
+            <img src="img/ResidentEvil.jpeg" alt="Resident Evil Village">
+            <div class="game-info">
+                <h2>Resident Evil Village</h2>
+                <p class="price">$30.990</p> <!-- Aquí se agrega el precio -->
+                <p>
+                    Resident Evil Village es un emocionante juego de horror en primera persona 
+                    desarrollado por Capcom. La historia sigue a Ethan Winters mientras busca a 
+                    su hija secuestrada en un siniestro pueblo europeo, lleno de criaturas horrendas 
+                    y secretos oscuros. Con una atmósfera tensa y una jugabilidad que mezcla acción 
+                    intensa con elementos de supervivencia, Resident Evil Village ofrece una experiencia 
+                    inmersiva y aterradora que desafiará a los jugadores en cada esquina. 
+                    ¡Prepárate para enfrentarte a tus miedos en esta escalofriante entrega de la icónica 
+                    saga de terror!
+                </p>
+            </div>
+        </div>
+
+        <div class="game">
+            <img src="img/SilentHill2.jpeg" alt="Silent Hill 2">
+            <div class="game-info">
+                <h2>Silent Hill 2</h2>
+                <p class="price">$29.990</p> <!-- Aquí se agrega el precio -->
+                <p>
+                    Silent Hill 2 es un juego de terror psicológico aclamado por su atmósfera inquietante 
+                    y su narrativa profunda. En este título, los jugadores siguen a James Sunderland, quien 
+                    llega a la escalofriante ciudad de Silent Hill tras recibir una carta de su esposa fallecida. 
+                    A medida que explora el sombrío y perturbador entorno, James se enfrenta a sus propios 
+                    demonios internos y a criaturas grotescas. Con una trama compleja y un enfoque en la psicología 
+                    y el horror, Silent Hill 2 ofrece una experiencia de juego intensa y emocionalmente impactante.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
